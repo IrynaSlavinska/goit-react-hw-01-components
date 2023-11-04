@@ -1,15 +1,115 @@
-@import-normalize; /* bring in normalize.css styles */
+@import-normalize;
 
-body {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+a {
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: #2c2c2c;
+  font-style: normal;
+  letter-spacing: -0.56px;
+  line-height: 1.33;
+
+  background: #a1c487;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #a1c487;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 2px solid #a1c487;
+}
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Profile--------------------------------- */
+.profile {
+  padding: 50px;
+  width: 400px;
+  margin: 0 auto;
+  background-color: #ffffc5;
+  border-radius: 30px;
+}
+.description {
+}
+.avatar {
+  width: 250px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #cecece;
+  margin-bottom: 20px;
+}
+.name,
+.tag,
+.location {
+  text-align: center;
+  line-height: 1.5;
+}
+.name {
+  font-size: 40px;
+  font-weight: 700;
+}
+.tag,
+.location {
+  font-size: 20px;
+  font-weight: 400;
+  color: #cecece;
+}
+
+.stats {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  justify-content: center;
+}
+.stats > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60px;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #a1c487;
 }
